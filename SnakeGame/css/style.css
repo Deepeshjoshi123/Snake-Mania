@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto Mono", monospace;
+}
+.body{
+    background-image: url("../img/bg.jpg");
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#scoreBox{
+    position: absolute;
+    top: 9px;
+    right: 200px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+#highScore{
+    position: absolute;
+    top: 9px;
+    left: 80px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#board{
+    background: linear-gradient(rgb(176, 226, 176) , rgb(224, 224, 169));
+    height: 90vmin;
+    width: 90vmin;
+    border: 2px solid black;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(18 , 1fr);
+    grid-template-rows: repeat(18 , 1fr);
+}
+
+.head{
+    background: linear-gradient(rgb(98, 173, 231) , rgb(216, 100, 226));
+    transform: scale(1.07);
+    border: 2px solid rgb(122, 51, 227);
+    border-radius: 9px;
+}
+.snake{
+    background: linear-gradient(purple , white);
+    border: .25vmin solid white;
+    border-radius: 16px;
+}
+.food{
+    background: linear-gradient(rgb(238, 56, 56),rgb(69, 238, 39));
+    border: .25vmin solid black;
+    border-radius: 14px;
+}
